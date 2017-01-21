@@ -34,6 +34,8 @@ public class HomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
+        startService(new Intent(this, LocationStreamService.class));
+
         openGame = new Intent(this, MainGameActivity.class);
         context = this;
         activity = this;

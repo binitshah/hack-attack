@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "779599146148",
+    "firebase_url": "https://hackattack-24a62.firebaseio.com",
+    "project_id": "hackattack-24a62",
+    "storage_bucket": "hackattack-24a62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779599146148:android:278e585cf13be2cc",
+        "android_client_info": {
+          "package_name": "hackattack.me.hackattack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779599146148-ed2ls16q23bsatp4j5go9ogr3rb4ebd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackattack.me.hackattack",
+            "certificate_hash": "8261BD5E192CE05C23BFD6BE42D4189F62F6702A"
+          }
+        },
+        {
+          "client_id": "779599146148-0cten82vjn0t7a4pfdtbbi9i4r1ts87c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhLb5rc1Cau_XfIO5dRMExMq7zy9xs0Pw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779599146148-0cten82vjn0t7a4pfdtbbi9i4r1ts87c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
