@@ -2,112 +2,139 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_02851af2fc5547915e94abf39393f9e464d7e912/classes.dex" />
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_8e5d96060737d443a2a143fb3dd807f11862f449.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_6aa6f030e300c18b460a2d78d190642d68019590.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_69037befe42f2ac0eae4dbb08896171a35d0a9fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_92a098019b4bc5383ff4aef49323c49d66720cfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_2d4bef907cb1e2e51a4f46b360b8bc5d7ea986f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_1c34342b2cd8b1a47cb5720339a303df08664b31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_41e5174a703d3212f5b4ec429976a1693cfbda89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f161ee2c357ce66bad103628f95f4634e6c91b0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_2a112bfab8499ff92cc3ccd1f2e8f3ab4bd35083.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_3def6d9fb02ee87ea8aeada645b1cb3da8608331.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_69ef5d202b88061b471d5ea7fc3e6f477a620d41/classes.dex" />
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_600eb900e5aa891a485e42c8361ef66fb6411b76.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\JavaApps\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_e1e055f4f7729ac182a4e9e39d9ae4acb60cf28a/classes.dex" />
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_1cab93bd3e027e839587f3cf61cb83ca50d6d60f.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_4cd0211e1f92dc541e3aac91b750623f268e0977/classes.dex" />
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_b539326452ba83960dc335cfe15f50da19f21f8f.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_a8396e41cc6f1c553dd19462be36e89e5dc63c32/classes.dex" />
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_95f39ba4e65934ee0ac9b7c626143c5a385b8974.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\hack-attack\hack-attack\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_b5b7e4f2850c4556abb8aa6d6043c5e9a977f6b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="12ed121a0ee586cd7958237b8ef5ff730f970707">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8d2bda4ab0b6e414b0469b2dc058c0b49a7ce694/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_12eff31fbc3e693c0c1efd401830e4394b72d270/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6e3816c6d91a6b5ee254a452eeb351d14c53d9b">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a0fe2cdf914c31b8549428ec7391223fed57657c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_cead9122e88548624b7567fb4c8b332cf0bafe06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_4112afc67f3dfb6ee235434fc417c1bcaa47aedc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_2704ca2dbf0b2b4395faa440e8210d20df2902e2/classes.dex" />
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\hack-attack\hack-attack\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_1a1c6ce9db76cff339e9c3dfdacf85b08d5525a8.jar" />
     </item>
 
 </items>

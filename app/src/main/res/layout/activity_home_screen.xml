@@ -11,6 +11,11 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimaryOpaque"/>
+
     <Button
         android:id="@+id/hostbutton"
         android:layout_width="wrap_content"
@@ -32,7 +37,7 @@
         android:background="@layout/buttonstyle"
         android:text="Join"
         android:textColor="#ffff" />
-
+<!--
     <EditText
         android:id="@+id/serverCode"
         android:layout_width="wrap_content"
@@ -46,7 +51,6 @@
         android:textColorLink="#4696e5"
         android:textCursorDrawable="@layout/cursorstyle"
         tools:textColorLink="#4696e5"
-        />
-
+        />-->
 
 </RelativeLayout>

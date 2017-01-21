@@ -1,5 +1,6 @@
 package hackattack.me.hackattack;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -7,6 +8,7 @@ import android.hardware.Camera;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,8 +20,9 @@ public class HomeScreen extends AppCompatActivity {
     private Camera mCamera;
     private CameraPreview mPreview;
     public Context context;
-    public Button joinbutton;
-    public EditText serverCode;
+    public Activity activity;
+//    public Button joinbutton;
+//    public EditText serverCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         context = this;
-
+        activity = this;
         // Create an instance of Camera
         mCamera = getCameraInstance();
 
@@ -38,9 +41,9 @@ public class HomeScreen extends AppCompatActivity {
         preview.addView(mPreview);
 
         Button hostbutton = (Button) findViewById(R.id.hostbutton);
-        joinbutton = (Button) findViewById(R.id.joinbutton);
-        serverCode = (EditText) findViewById(R.id.serverCode);
-        serverCode.setVisibility(View.INVISIBLE);
+        Button joinbutton = (Button) findViewById(R.id.joinbutton);
+        //serverCode = (EditText) findViewById(R.id.serverCode);
+        //serverCode.setVisibility(View.INVISIBLE);
 
         hostbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,8 +69,27 @@ public class HomeScreen extends AppCompatActivity {
         joinbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                serverCode.setVisibility(View.VISIBLE);
-                joinbutton.setVisibility(View.INVISIBLE);
+//                serverCode.setVisibility(View.VISIBLE);
+//                joinbutton.setVisibility(View.INVISIBLE);
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                LayoutInflater inflater = activity.getLayoutInflater();
+
+                builder.setView(inflater.inflate(R.layout.dialog_join, null))
+                        // Add action buttons
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                // sign in the user ...
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+                builder.create().show();
             }
         });
     }
