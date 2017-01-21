@@ -51,9 +51,11 @@ public class HomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
+       // gamesMap = Map<String, Obj>
 
         database = FirebaseDatabase.getInstance().getReference();
         DatabaseReference userList = database.child("games");
+        //TRY ADD CHILD EVENT LISTENER
         userList.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -131,6 +133,7 @@ public class HomeScreen extends AppCompatActivity {
 //                                releaseCamera();
                                 EditText gameCodeInput = (EditText) joinDialogView.findViewById(R.id.gameCode);
                                 String gameCode = gameCodeInput.getText().toString();
+
                                 Object gcResult = (Map<String, Object>) gamesMap.get(gameCode);
 
                                 if(gcResult == null){
