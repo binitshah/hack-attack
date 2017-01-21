@@ -16,22 +16,21 @@ public class LocationStreamService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
         super.onStartCommand(intent, flags, startId);
-        int gameCode = intent.getIntExtra("gameCode", -1);
-        if(gameRef == null) {
-            Log.i("Service game code: ", Integer.toString(gameCode));
+        String gameCode = Integer.toString(intent.getIntExtra("gameCode", -1));
+        if(game == null) {
+            Log.i("Service game code: ", gameCode);
             Log.i("Service", "Setting ref value");
-            gameRef = database.getReference(Integer.toString(gameCode));
-            gameRef.setValue("game");
+            game = new GameObj(Integer.parseInt(gameCode));
+            database.child("games").child(gameCode).setValue(game);
         }
         return Service.START_STICKY;
     }
-
-    DatabaseReference gameRef;
-    FirebaseDatabase database;
+    GameObj game;
+    DatabaseReference database;
     @Override
     public void onCreate() {
         Log.i("Started service", "Connecting to database");
-        database = FirebaseDatabase.getInstance();
+        database = FirebaseDatabase.getInstance().getReference();
         new Thread(new Runnable() {
             @Override
             public void run() {

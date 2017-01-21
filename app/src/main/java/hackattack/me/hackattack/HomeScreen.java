@@ -18,6 +18,15 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.io.ObjectStreamField;
+import java.util.Map;
 import java.util.Random;
 
 public class HomeScreen extends AppCompatActivity {
@@ -30,13 +39,33 @@ public class HomeScreen extends AppCompatActivity {
     Intent openGame;
     Intent hostService;
     int randomCode = -1;
+    View joinDialogView;
 //    public Button joinbutton;
 //    public EditText serverCode;
+    DatabaseReference database;
+    DataSnapshot snap;
+    Map<String, Object> gamesMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+
+
+        database = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference userList = database.child("games");
+        userList.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                gamesMap = (Map<String, Object>) dataSnapshot.getValue();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
         Random jimmy = new Random();
         hostService = new Intent(this, LocationStreamService.class);
         randomCode = jimmy.nextInt(899)+100;
@@ -92,16 +121,25 @@ public class HomeScreen extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 LayoutInflater inflater = activity.getLayoutInflater();
-
-                builder.setView(inflater.inflate(R.layout.dialog_join, null))
+                joinDialogView = inflater.inflate(R.layout.dialog_join, null);
+                builder.setView(joinDialogView)
                         // Add action buttons
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // sign in the user ...
 //                                releaseCamera();
-                                startActivity(openGame);
-                                finish();
+                                EditText gameCodeInput = (EditText) joinDialogView.findViewById(R.id.gameCode);
+                                String gameCode = gameCodeInput.getText().toString();
+                                Object gcResult = (Map<String, Object>) gamesMap.get(gameCode);
+
+                                if(gcResult == null){
+                                    Toast.makeText(activity, "Game not found", Toast.LENGTH_SHORT).show();
+                                }else {
+                                    Toast.makeText(activity, "Found game...", Toast.LENGTH_SHORT).show();
+                                    startActivity(openGame);
+                                    finish();
+                                }
                             }
                         })
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
