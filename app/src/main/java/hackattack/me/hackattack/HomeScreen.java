@@ -6,9 +6,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +24,7 @@ public class HomeScreen extends AppCompatActivity {
     private CameraPreview mPreview;
     public Context context;
     public Activity activity;
+    public FrameLayout preview;
     Intent openGame;
 //    public Button joinbutton;
 //    public EditText serverCode;
@@ -32,16 +35,14 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         openGame = new Intent(this, MainGameActivity.class);
-
         context = this;
         activity = this;
+
+        preview = (FrameLayout) findViewById(R.id.camera_preview);
+
         // Create an instance of Camera
         mCamera = getCameraInstance();
-
-        // Create our Preview view and set it as the content of our activity.
         mPreview = new CameraPreview(this, mCamera);
-
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
 
         Button hostbutton = (Button) findViewById(R.id.hostbutton);
@@ -58,7 +59,9 @@ public class HomeScreen extends AppCompatActivity {
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // continue with delete
+//                            releaseCamera();
                             startActivity(openGame);
+                            finish();
                         }
                     })
                     .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -87,7 +90,9 @@ public class HomeScreen extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // sign in the user ...
+//                                releaseCamera();
                                 startActivity(openGame);
+                                finish();
                             }
                         })
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -107,6 +112,7 @@ public class HomeScreen extends AppCompatActivity {
         }
         catch (Exception e){
             // Camera is not available (in use or does not exist)
+            Log.e("Camera error", "Could not open camera");
         }
         return c; // returns null if camera is unavailable
     }
@@ -118,6 +124,21 @@ public class HomeScreen extends AppCompatActivity {
         } else {
             // no camera on this device
             return false;
+        }
+    }
+
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+        releaseCamera();
+    }
+    public void releaseCamera(){
+        if(mCamera != null){
+            mCamera.stopPreview();
+            mCamera.setPreviewCallback(null);
+
+            mCamera.release();
+            mCamera = null;
         }
     }
 }
