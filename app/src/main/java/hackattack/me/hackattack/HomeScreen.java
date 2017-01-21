@@ -3,6 +3,7 @@ package hackattack.me.hackattack;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.support.v7.app.AlertDialog;
@@ -21,6 +22,7 @@ public class HomeScreen extends AppCompatActivity {
     private CameraPreview mPreview;
     public Context context;
     public Activity activity;
+    Intent openGame;
 //    public Button joinbutton;
 //    public EditText serverCode;
 
@@ -28,6 +30,8 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+
+        openGame = new Intent(this, MainGameActivity.class);
 
         context = this;
         activity = this;
@@ -54,6 +58,7 @@ public class HomeScreen extends AppCompatActivity {
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // continue with delete
+                            startActivity(openGame);
                         }
                     })
                     .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -82,6 +87,7 @@ public class HomeScreen extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // sign in the user ...
+                                startActivity(openGame);
                             }
                         })
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
