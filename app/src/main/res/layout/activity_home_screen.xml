@@ -21,5 +21,22 @@
         android:background="@layout/buttonstyle"
         android:textColor="#ffff" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_alignTop="@+id/hostbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/editText"
+        tools:textColorLink="#4696e5"
+        android:textColorLink="#4696e5"
+        android:backgroundTint="#4696e5"
+        android:textCursorDrawable="@layout/cursorstyle"
+
+        />
+
 
 </RelativeLayout>
