@@ -18,6 +18,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class HomeScreen extends AppCompatActivity {
 
     private Camera mCamera;
@@ -26,6 +28,8 @@ public class HomeScreen extends AppCompatActivity {
     public Activity activity;
     public FrameLayout preview;
     Intent openGame;
+    Intent hostService;
+    int randomCode = -1;
 //    public Button joinbutton;
 //    public EditText serverCode;
 
@@ -33,8 +37,10 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-
-        startService(new Intent(this, LocationStreamService.class));
+        Random jimmy = new Random();
+        hostService = new Intent(this, LocationStreamService.class);
+        randomCode = jimmy.nextInt(899)+100;
+        hostService.putExtra("gameCode", randomCode);
 
         openGame = new Intent(this, MainGameActivity.class);
         context = this;
@@ -55,9 +61,10 @@ public class HomeScreen extends AppCompatActivity {
         hostbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startService(hostService);
                 new AlertDialog.Builder(context)
                     .setTitle("Host")
-                    .setMessage("Server code: ASDF")
+                    .setMessage("Server code: " + Integer.toString(randomCode))
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // continue with delete
