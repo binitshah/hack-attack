@@ -4,38 +4,48 @@
     android:id="@+id/activity_home_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hackattack.me.hackattack.HomeScreen">
 
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
     <Button
-        android:text="Host"
+        android:id="@+id/hostbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hostbutton"
-        android:layout_marginTop="77dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
         android:background="@layout/buttonstyle"
+        android:text="Host"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/joinbutton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hostbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@layout/buttonstyle"
+        android:text="Join"
         android:textColor="#ffff" />
 
     <EditText
+        android:id="@+id/serverCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/joinbutton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4696e5"
+        android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        android:ems="10"
-        android:layout_alignTop="@+id/hostbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:id="@+id/editText"
-        tools:textColorLink="#4696e5"
         android:textColorLink="#4696e5"
-        android:backgroundTint="#4696e5"
         android:textCursorDrawable="@layout/cursorstyle"
-
+        tools:textColorLink="#4696e5"
         />
 
 
