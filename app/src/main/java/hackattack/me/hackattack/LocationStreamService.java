@@ -61,6 +61,21 @@ public class LocationStreamService extends Service implements LocationListener {
     public void onCreate() {
         Log.i("Started service", "Connecting to database");
         database = FirebaseDatabase.getInstance().getReference();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int y;
+                while (true) {
+                    getLocation();
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+
     }
 
     @Override
