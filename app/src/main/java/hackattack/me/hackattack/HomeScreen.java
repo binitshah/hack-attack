@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
-import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,14 +17,12 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.io.ObjectStreamField;
 import java.util.Map;
 import java.util.Random;
 
@@ -37,7 +34,7 @@ public class HomeScreen extends AppCompatActivity {
     public Activity activity;
     public FrameLayout preview;
     Intent openGame;
-    Intent hostService;
+    Intent locationService;
     int randomCode = -1;
     View joinDialogView;
 //    public Button joinbutton;
@@ -52,6 +49,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
        // gamesMap = Map<String, Obj>
+
 
         database = FirebaseDatabase.getInstance().getReference();
         DatabaseReference userList = database.child("games");
@@ -69,9 +67,8 @@ public class HomeScreen extends AppCompatActivity {
         });
 
         Random jimmy = new Random();
-        hostService = new Intent(this, LocationStreamService.class);
+        locationService = new Intent(this, LocationStreamService.class);
         randomCode = jimmy.nextInt(899)+100;
-        hostService.putExtra("gameCode", randomCode);
 
         openGame = new Intent(this, MainGameActivity.class);
         context = this;
@@ -92,7 +89,9 @@ public class HomeScreen extends AppCompatActivity {
         hostbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startService(hostService);
+                locationService.putExtra("gameCode", randomCode);
+                locationService.putExtra("firstPlayer", true);
+                startService(locationService);
                 new AlertDialog.Builder(context)
                     .setTitle("Host")
                     .setMessage("Server code: " + Integer.toString(randomCode))
@@ -102,11 +101,6 @@ public class HomeScreen extends AppCompatActivity {
 //                            releaseCamera();
                             startActivity(openGame);
                             finish();
-                        }
-                    })
-                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            // do nothing
                         }
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -119,8 +113,6 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
 //                serverCode.setVisibility(View.VISIBLE);
 //                joinbutton.setVisibility(View.INVISIBLE);
-
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 LayoutInflater inflater = activity.getLayoutInflater();
                 joinDialogView = inflater.inflate(R.layout.dialog_join, null);
@@ -140,6 +132,8 @@ public class HomeScreen extends AppCompatActivity {
                                     Toast.makeText(activity, "Game not found", Toast.LENGTH_SHORT).show();
                                 }else {
                                     Toast.makeText(activity, "Found game...", Toast.LENGTH_SHORT).show();
+                                    locationService.putExtra("gameCode", Integer.parseInt(gameCode));
+                                    startService(locationService);
                                     startActivity(openGame);
                                     finish();
                                 }

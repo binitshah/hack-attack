@@ -2,33 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_00af7c8b7f868f57bb873c544a14f9ca83d1a6a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_b5b7e4f2850c4556abb8aa6d6043c5e9a977f6b5.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_02851af2fc5547915e94abf39393f9e464d7e912/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="/Users/JakeHoward/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
         jumboMode="false"
@@ -39,66 +12,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_a8396e41cc6f1c553dd19462be36e89e5dc63c32.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_4cd0211e1f92dc541e3aac91b750623f268e0977/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_17b6baa5cc855a7a76c34c93a232bd4ca9fae90e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_a8396e41cc6f1c553dd19462be36e89e5dc63c32/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.0.1_17b6baa5cc855a7a76c34c93a232bd4ca9fae90e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_12eff31fbc3e693c0c1efd401830e4394b72d270.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_b5b7e4f2850c4556abb8aa6d6043c5e9a977f6b5/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -117,51 +36,6 @@
         revision="25.0.2"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_4cd0211e1f92dc541e3aac91b750623f268e0977.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3281e96b620089806f9ee71be41ba0f5bc010a9a">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8d2bda4ab0b6e414b0469b2dc058c0b49a7ce694/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_2704ca2dbf0b2b4395faa440e8210d20df2902e2.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4530f4bba153fb5ae2842ef89da8a6a49175af17">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a0fe2cdf914c31b8549428ec7391223fed57657c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_a3653753113240c4ddc15c08124c3d86edc0929a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_2704ca2dbf0b2b4395faa440e8210d20df2902e2/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -191,15 +65,6 @@
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_e1e055f4f7729ac182a4e9e39d9ae4acb60cf28a.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_69ef5d202b88061b471d5ea7fc3e6f477a620d41/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
         jumboMode="false"
@@ -207,51 +72,6 @@
         revision="25.0.2"
         sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-10.0.1_a3653753113240c4ddc15c08124c3d86edc0929a.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_e1e055f4f7729ac182a4e9e39d9ae4acb60cf28a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_5c473d4cde0e3173579929d063d8d135414a554b/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.0.1_5c473d4cde0e3173579929d063d8d135414a554b.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_acd5660708614b7878bbadb0ad4888e830ec4db2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_6f7beafc19f2c23b4705b3659d6ab4b54ca6db24/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -264,75 +84,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_cead9122e88548624b7567fb4c8b332cf0bafe06.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_12eff31fbc3e693c0c1efd401830e4394b72d270/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.0.1_cdfb51e86ad9432774e29657edb51bca3803cbe1.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_f2c156a7028b85ef90c452a0fc427859a636b01b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_cead9122e88548624b7567fb4c8b332cf0bafe06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_4112afc67f3dfb6ee235434fc417c1bcaa47aedc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_cdfb51e86ad9432774e29657edb51bca3803cbe1/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.0.1_f2c156a7028b85ef90c452a0fc427859a636b01b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -342,6 +99,69 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_4112afc67f3dfb6ee235434fc417c1bcaa47aedc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_b5b7e4f2850c4556abb8aa6d6043c5e9a977f6b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_a8396e41cc6f1c553dd19462be36e89e5dc63c32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.0.1_17b6baa5cc855a7a76c34c93a232bd4ca9fae90e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_2704ca2dbf0b2b4395faa440e8210d20df2902e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.0.1_5c473d4cde0e3173579929d063d8d135414a554b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_cead9122e88548624b7567fb4c8b332cf0bafe06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/JakeHoward/AndroidStudioProjects/hack-attack/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.0.1_f2c156a7028b85ef90c452a0fc427859a636b01b.jar" />
     </item>
 
 </items>
