@@ -29,6 +29,21 @@ public class MainGameActivity extends AppCompatActivity {
     public FrameLayout preview;
     double x1, x2, y1, y2 = 0;
     double distance = -1;
+    Handler mHandler;
+
+    Runnable pictureCapture = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                //capture camera pic
+                //upload to cloud
+            } finally {
+                // 100% guarantee that this always happens, even if
+                // your update method throws an exception
+                mHandler.postDelayed(pictureCapture, 5000);
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +70,10 @@ public class MainGameActivity extends AppCompatActivity {
                 preview.addView(mPreview);
             }
         }, 10000);
+
+
+        mHandler = new Handler();
+        pictureCapture.run();
 
         final int gameCode = getIntent().getIntExtra("gameCode", -1);
 
@@ -142,4 +161,5 @@ public class MainGameActivity extends AppCompatActivity {
 //            mCamera = null;
 //        }
 //    }
+
 }
