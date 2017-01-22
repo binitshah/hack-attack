@@ -44,6 +44,7 @@ public class LocationStreamService extends Service implements LocationListener {
         super.onStartCommand(intent, flags, startId);
 
         gameCode = Integer.toString(intent.getIntExtra("gameCode", -1));
+
         firstPlayer = intent.getBooleanExtra("firstPlayer", false);
         if (firstPlayer) {
             Log.i("Service game code: ", gameCode);
@@ -51,6 +52,9 @@ public class LocationStreamService extends Service implements LocationListener {
             GameObj game = new GameObj(Integer.parseInt(gameCode));
             database.child("games").child(gameCode).setValue(game);
         }
+
+
+
         getLocation();
         return Service.START_STICKY;
     }
@@ -97,6 +101,7 @@ public class LocationStreamService extends Service implements LocationListener {
                     .isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
             if ((!isGPSEnabled && !isNetworkEnabled) || (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)){
+                Log.i("Service", "Location disabled");
                 Toast.makeText(getApplicationContext()  .getApplicationContext(), "Location not enabled", Toast.LENGTH_SHORT).show();
             } else {
                 this.canGetLocation = true;
@@ -150,11 +155,11 @@ public class LocationStreamService extends Service implements LocationListener {
         DatabaseReference gameRef = database.child("games").child(gameCode);
         Map<String,Object> updateMap = new HashMap<String,Object>();
 
-        if(firstPlayer){
+        if(firstPlayer && location != null){
             Log.i("Service", "First player");
             updateMap.put("player1coordx", location.getLatitude());
             updateMap.put("player1coordy", location.getLongitude());
-        }else{
+        }else if(location != null){
             Log.i("Service", "Second player");
             updateMap.put("player2coordx", location.getLatitude());
             updateMap.put("player2coordy", location.getLongitude());
@@ -178,24 +183,3 @@ public class LocationStreamService extends Service implements LocationListener {
 
     }
 }
-
-/*
-
-myRef.addValueEventListener(new ValueEventListener() {
-        @Override
-public void onDataChange(DataSnapshot dataSnapshot) {
-
-        String value = dataSnapshot.getValue(String.class);
-        Log.d(TAG, "Value is: " + value);
-        }
-
-        @Override
-public void onCancelled(DatabaseError error){
-
-        Log.w(TAG, "Failed to read value.", error.toExeption());
-        }
-
-
-        });
-
-*/

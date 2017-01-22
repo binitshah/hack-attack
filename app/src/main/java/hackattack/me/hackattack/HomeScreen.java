@@ -90,6 +90,8 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 locationService.putExtra("gameCode", randomCode);
+                openGame.putExtra("gameCode", randomCode);
+                openGame.putExtra("firstPlayer", true);
                 locationService.putExtra("firstPlayer", true);
                 startService(locationService);
                 new AlertDialog.Builder(context)
@@ -134,6 +136,7 @@ public class HomeScreen extends AppCompatActivity {
                                     Toast.makeText(activity, "Found game...", Toast.LENGTH_SHORT).show();
                                     locationService.putExtra("gameCode", Integer.parseInt(gameCode));
                                     startService(locationService);
+                                    openGame.putExtra("gameCode", Integer.parseInt(gameCode));
                                     startActivity(openGame);
                                     finish();
                                 }

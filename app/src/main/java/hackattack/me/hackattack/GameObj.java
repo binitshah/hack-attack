@@ -10,10 +10,10 @@ import java.util.Map;
  */
 
 public class GameObj {
-    public double player1coordx = -1;
-    public double player1coordy = -1;
-    public double player2coordx = -1;
-    public double player2coordy = -1;
+    public double player1coordx = 0;
+    public double player1coordy = 0;
+    public double player2coordx = 0;
+    public double player2coordy = 0;
     public int gameCode = 0;
 
     public GameObj() {

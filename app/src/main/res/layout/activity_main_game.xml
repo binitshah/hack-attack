@@ -3,7 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="hackattack.me.hackattack.MainGameActivity">
+
+    <TextView
+        android:id="@+id/runText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="RUN!"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/waitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Wait..."
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        />
 
     <FrameLayout
         android:id="@+id/camera_view"
