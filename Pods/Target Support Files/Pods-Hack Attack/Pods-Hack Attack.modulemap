@@ -1,0 +1,6 @@
+framework module Pods_Hack_Attack {
+  umbrella header "Pods-Hack Attack-umbrella.h"
+
+  export *
+  module * { export * }
+}
